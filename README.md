@@ -7,7 +7,7 @@ Repo for Final Project of Computer Vision course at Insper
 Para a Rúbrica C, foi criado um script que permite gerar, a partir de um vídeo de uma reunião on-line, um relatório acerca das emoções dos participantes.
 
 O script é executável através da interface de linha de comando (CLI - Command Line Interface)
-Comando: ""
+Comando: "python3 v1_cl_local.py path/para/video.mp4"
 
 São 5 funções principais, explicadas abaixo:
 * Transformação do vídeo: Recebe vídeo como input e devolve lista de frames para serem processados
@@ -17,11 +17,15 @@ São 5 funções principais, explicadas abaixo:
 * Geração de Insights: Função cria diversos subplots mostrando a evolução de cada tipo de emoção para cada pessoa no vídeo
 * Criação de PDF: Dispondo do DataFrame com as emoções de cada pessoa por frame e o dicionário com os rostos das pessoas por ID, é criado um PDF com insights acerca das emoções do participante ao longo da reunião. A função retorna o PDF do relatório.
 * Abrir PDF: A função abre o PDF dentro do próprio VSCode.
+* Main: Chama todas as funções montando a pipeline da aplicação
+
 
 ### Como usar - Dicas
 * Clonar Repositório
-* Instalar dependências
-* Rodar comando
+* Instalar dependências que estão em requirements.txt
+* Rodar comando 'python3 v1_cl_local.py path/para/video.mp4'
+
+Obs: O VSCode cria um virtual environment ao tentar rodar o script. 
 
 # Rúbrica B - Flask App Local
 
