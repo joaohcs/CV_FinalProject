@@ -28,6 +28,20 @@ São 5 funções principais, explicadas abaixo:
 Obs: O VSCode cria um virtual environment ao tentar rodar o script. 
 
 # Rúbrica B - Flask App Local
+A Rúbrica B consistia em criar um servidor local usando flask e um HTML cru apenas para prova de conceito, no qual o usuário conseguisse subir um vídeo e receber de volta o report. 
 
+Nesta etapa, melhorei a formatação do report e ao invés do HTML cru adicionei algumas modificações para ficar melhorar a UI.
+
+Dentro da pasta da v2, em Uploads, é possível encontrar um exemplo de report gerado
+
+### Como usar - Dicas
+* Clonar Repositório
+* Instalar as dependências em requirements.txt
+* Rodar 'flask run' no terminal
 
 # Rúbrica A - Deploy Público Flask App
+O objetivo da Rúbrica A era realizar o deploy público da aplicação. Não consegui. 
+
+Testei o Heroku e o Railway, além de pesquisar algumas alternativas usando Docker. O problema principal foi que a face_recognition, biblioteca usada na aplicação, precisava que fosse instalada antes a biblioteca dlib que por sua vez precisava do cmake e de outras dependências que precisaram ser instaladas a nível de sistema (Com sudo apt install..). 
+
+Para isso, seria necessário acessar uma CLI dentro da plataforma ou ferramenta para deploy e instalar no próprio sistema essas dependências, foi o que descobri tentando resolver o problema. Vou testar depois como fazer isso, por não ter conseguido busquei melhorar o HTML da Rúbrica B, o que também era um objetivo da Rúbrica A.
