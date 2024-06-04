@@ -42,9 +42,13 @@ def upload_file():
 
         file.save(filepath)
         pdf_path = process_video(filepath)
-        return redirect(url_for('download_file', filename=os.path.basename(pdf_path)))
+        return redirect(url_for('download_page', filename=os.path.basename(pdf_path)))
 
     return redirect(request.url)
+
+@app.route('/download/<filename>')
+def download_page(filename):
+    return render_template('download.html', filename=filename)
 
 
 @app.route('/uploads/<filename>')
